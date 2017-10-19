@@ -19,24 +19,8 @@ const defaultArgs = ["-d", "../dist", "-s", "site"];
 
 gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("hugo-preview", (cb) => buildSite(cb, ["--buildDrafts", "--buildFuture"]));
-
-gulp.task("cms", () => {
-  const match = process.env.REPOSITORY_URL ? process.env.REPOSITORY_URL : cp.execSync("git remote -v", {encoding: "utf-8"});
-  let repo = null;
-  match.replace(/github.com[:/](\S+)(\.git)?/, (_, m) => {
-    repo = m.replace(/\.git$/, "");
-  });
-  gulp.src("./src/cms/*")
-    .pipe(replace("<% GITHUB_REPOSITORY %>", repo))
-    .pipe(gulp.dest("./dist/admin"))
-    .pipe(browserSync.stream());
-  gulp.src(["./node_modules/netlify-cms/dist/*.*", "!./node_modules/netlify-cms/dist/*.html"])
-    .pipe(gulp.dest("./dist"))
-    .pipe(browserSync.stream())
-});
-
-gulp.task("build", ["css", "js", "hugo", "cms"]);
-gulp.task("build-preview", ["css", "js", "hugo-preview"]);
+gulp.task("build", ["css", "js", "cms-assets", "hugo"]);
+gulp.task("build-preview", ["css", "js", "cms-assets", "hugo-preview"]);
 
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
@@ -48,6 +32,11 @@ gulp.task("css", () => (
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));
+
+gulp.task("cms-assets", () => (
+  gulp.src("./node_modules/netlify-cms/dist/*.{woff,eot,woff2,ttf,svg,png}")
+    .pipe(gulp.dest("./dist/css"))
+))
 
 gulp.task("js", (cb) => {
   const myConfig = Object.assign({}, webpackConfig);
@@ -79,7 +68,7 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
+gulp.task("server", ["hugo", "css", "cms-assets", "js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
@@ -87,7 +76,6 @@ gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
   });
   gulp.watch("./src/js/**/*.js", ["js"]);
   gulp.watch("./src/css/**/*.css", ["css"]);
-  gulp.watch("./src/cms/*", ["cms"]);
   gulp.watch("./site/static/img/icons/*.svg", ["svg"]);
   gulp.watch("./site/**/*", ["hugo"]);
 });
