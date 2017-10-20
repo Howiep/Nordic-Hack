@@ -1,10 +1,14 @@
 import * as React from "react";
 export declare namespace ReactToolbox {
-  interface Props extends React.Attributes {
+  interface Props {
     /**
      * Set a class for the root component.
      */
     className?: string;
+    /**
+     * Key used to uniquely identify the element within an Array.
+     */
+    key?: string | number;
     /**
      * Callback called when the component is clicked.
      */

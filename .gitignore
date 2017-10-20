@@ -1,2 +1,4 @@
 
-node_modules
+node_modules/
+node_modules/bail
+node_modules/bail/readme.md
