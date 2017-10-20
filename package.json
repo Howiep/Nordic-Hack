@@ -1,7 +1,7 @@
 {
-  "name": "victor-hugo",
+  "name": "Nordic-Hack",
   "version": "1.0.0",
-  "description": "Victor Hugo is a Hugo boilerplate for creating truly epic websites!",
+  "description": "Nordic-Hack is a website for a Hackathon",
   "main": "index.js",
   "scripts": {
     "hugo": "gulp hugo",
@@ -48,6 +48,8 @@
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "gulp-inject": "^4.2.0",
     "gulp-svgmin": "^1.2.3",
     "gulp-svgstore": "^6.1.0",
