@@ -1,15 +1,17 @@
 {{ partial "head" . }} 
 
-{{ partial "nav" . }} 
+{{ partial "nav" . }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/wlogo.svg" "title" "Nordic Hack" "subtitle" "Imagine tomorrow by hacking today") }} 
+{{ partial "jumbotron" (dict "imageUrl" "/img/home/mentors.jpg" "title" "Nordic Hack" "subtitle" "Imagine tomorrow by hacking today") }} 
 
-{{ partial "short-text" (dict "heading" "23 - 24. Feb" "text" "Sofiendalsvej 60, Aalborg")}} 
-<!--  
-{{ partial "2-up" (dict "heading" "What we offer" "description" "Kaldi is the ultimate spot for coffee lovers who want to learn about their java’s origin and support the farmers that grew it. We take coffee production, roasting and brewing seriously and we’re glad to pass that knowledge to anyone." "svg1" "img/illustrations/coffee.svg" "text1" "We sell green and roasted coffee beans that are sourced directly from independent farmers and farm cooperatives. We’re proud to offer a variety of coffee beans grown with great care for the environment and local communities. Check our post or contact us directly for current availability." "svg2" "/img/illustrations/coffee-gear.svg" "text2" "We offer a small, but carefully curated selection of brewing gear and tools for every taste and experience level. No matter if you roast your own beans or just bought your first french press, you’ll find a gadget to fall in love with in our shop." "buttonText" "See all products" "buttonLink" "/products" ) }} 
--->
-{{ partial "text-and-image" (dict "heading" "What is a Hackathon?" "text" "First of all a hackathon has nothing to do with “hacking” with malicious intent as it is known today. A hackathon is a invention marathon where people with all sorts of backgrounds get together and build interesting things. A hackathon is not limited to developers and computer science majors - Anyone with a interest in tech can participate. " "buttonText" "Read more" "buttonLink" "/values") }} 
+{{ partial "short-text" (dict "heading" "23 - 24. Februar" "text" "Sofiendalsvej 60, Aalborg")}} 
+ 
+{{ partial "2-up" (dict "heading" "What is a Nordic Hack?" "description" "Nordic Hack is a hackathon for students hosted by other students. At Nordic Hack we focus on making an event where students can benefit from participating. Students will have opportunity to learn new skills, connect with corporate sponsors and have fun with other students who share their passion for building new and cool stuff." "svg1" "img/home/pc.png" "text1" "A hackathon is a invention marathon where people with all sorts of backgrounds get together and build interesting things. A hackathon is not limited to developers and computer science majors - Anyone with a interest in tech can participate." "svg2" "/img/home/net.png" "text2" "Hackathons are a great way of connecting with people from different backgrounds and with different skills. Some corporate sponsors will be present at the event, so this is a great opportunity for students to connect with people from industry." "buttonText" "Register here" "buttonLink" "/register" ) }} 
 
-<!-- {{ partial "blog" . }}  -->
+{{ partial "about" . }}
 
-<!-- {{ partial "footer" . }} -->
+{{ partial "timeline" . }}
+
+{{ partial "blog" . }}
+
+{{ partial "footer" . }}

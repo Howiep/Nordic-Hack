@@ -1,0 +1,12 @@
+<li class="flex items-center lh-copy pa3 ph0-l bb b--black-10">
+    {{ if .imageURL }}
+    <img class="w3 h3 w3-ns h3-ns br-100" src="{{.imageURL}}" /> 
+    {{ end }}
+    <div class="pl3 flex-auto">
+        <span class="f5 db primary">{{.heading}}</span>
+        <span class="f5 db black-70">{{.subtext}}</span>
+    </div>
+    <div>
+        <span class="f5 primary">{{.time}}</span>
+    </div>
+</li>

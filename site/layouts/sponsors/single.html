@@ -1,0 +1,13 @@
+{{ partial "head" . }}
+{{ partial "nav" . }}
+{{ partial "jumbotron" (dict "title" "Sponsors" "imageUrl" "/img/home/jimage.jpg" "subtitle" "Nordic Hack is made possible with the help of our sponsors") }}
+
+<article>
+    <div class="cf ma3 pa2">
+        <div class="center">
+            {{ partial "sponsor" (dict "heading" "UCN Technology and business" "imageURL" "/img/home/UCN-logo.png" "text" "Our sponsor UCN has been so generous as to host the event and let us use the biggest room on the Sofiendalsvej campus for our main event room." "buttonText" "See more" "buttonLink" "#" ) }} 
+        </div>
+    </div>
+</article>
+
+{{ partial "footer" . }}
