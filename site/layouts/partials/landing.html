@@ -1,0 +1,18 @@
+<div class="bg-primary mw9 center ph3-ns">
+    <div class="flex ph2-ns">
+        <div class="fl w-50-ns pa2 mt6-ns mt5">
+            <img src="{{.vector2}}" alt="">
+        </div>
+        <div class="fl w-100 pa2 mt6-ns mt5">
+            <img src="{{.vector1}}" class="" alt="">
+            <h1 class="white b f3">
+                23 - 24. February
+            </h1>
+            {{ if .buttonText }}
+            <div class="">
+                <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>

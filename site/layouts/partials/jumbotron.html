@@ -1,4 +1,3 @@
-{{ if .title }}
 <div class="pv5 pv6-l ph3 bg-center cover bg-primary">
     <div class="mw7 center ph3">
 
@@ -23,26 +22,3 @@
         {{ end }}
     </div>
 </div>
-{{ end }} {{ if .vector1 }}
-
-<div class="bg-primary bg-center">
-    <div class="cf">
-        <div class="fl w-50-ns pt6 ph5-ns">
-            <img src="{{.vector2}}" alt="">
-        </div>
-        <div class="fl w-50-ns pt6 mt5-ns ph2">
-            <img src="{{.vector1}}" class=" v-mid" alt=""> 
-            <h1 class="ph3 f2 f1-l b di lh-title mb3 grey-1">
-                    23 - 24. February
-            </h1>
-            {{ if .buttonText }}
-            <div class="ph3 pv3">
-                <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
-            </div>
-            {{ end }}
-        </div>
-
-    </div>
-</div>
-
-{{ end }}
