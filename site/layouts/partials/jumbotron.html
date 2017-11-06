@@ -26,15 +26,17 @@
 {{ end }} {{ if .vector1 }}
 
 <div class="bg-primary bg-center">
-    <div class="flex">
-        <div class="w-50 w-100-ns h-5 mt5 pv3">
+    <div class="cf">
+        <div class="fl w-50-ns pt6">
             <img src="{{.vector2}}" alt="">
         </div>
-        <div class="w-50 mt5 pv6">
+        <div class="fl w-50-ns pt6 mt5-ns ph2">
             <img src="{{.vector1}}" class=" v-mid" alt=""> 
-            {{ partial "short-text" (dict "heading" "23 - 24. Februar" "text" "Sofiendalsvej 60, Aalborg")}}
+            <h1 class="ph3 f2 f1-l b di lh-title mb3 grey-1">
+                    23 - 24. February
+            </h1>
             {{ if .buttonText }}
-            <div class="">
+            <div class="ph3 pv3">
                 <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
             </div>
             {{ end }}
