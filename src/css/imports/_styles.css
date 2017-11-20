@@ -17,3 +17,27 @@ nav{
   z-index: 999;
 }
 
+#mlh-trust-badge{
+  margin-top: 60px;
+}
+@media screen and (width >= 500px) and (width <= 800px) {
+ 
+#mlh-trust-badge{
+  margin-top: 45px;
+
+}
+}
+@media screen and (width >= 800px) and (width <= 960px) {
+  
+ #mlh-trust-badge{
+   margin-top: 45px;
+ 
+ }
+ }
+ @media screen and (width >= 100px) and (width <= 500px) {
+  
+ #mlh-trust-badge{
+   margin-top: 45px;
+ 
+ }
+ }
