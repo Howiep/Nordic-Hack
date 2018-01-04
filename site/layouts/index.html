@@ -6,26 +6,27 @@
 
 {{ partial "short-text" (dict "heading" "UCN" "text" "Sofiendalsvej 60, Aalborg")}} 
  
-{{ partial "2-up" (dict "heading" "What is Nordic Hack?" "description" "Nordic Hack is a hackathon for students hosted by other students. At Nordic Hack we focus on making an event where students can benefit from participating. Students will have opportunity to learn new skills, connect with corporate sponsors and have fun with other students who share their passion for building new and cool stuff." "svg1" "img/home/pc.png" "text1" "A hackathon is a invention marathon where people with all sorts of backgrounds get together and build interesting things. A hackathon is not limited to developers and computer science majors - Anyone with a interest in tech can participate." "svg2" "/img/home/net.png" "text2" "Hackathons are a great way of connecting with people from different backgrounds and with different skills. Some corporate sponsors will be present at the event, so this is a great opportunity for students to connect with people from industry." "buttonText" "Register here" "buttonLink" "/register" ) }} 
+{{ partial "2-up" (dict "imageUrl" "/img/home/mentors.jpg" "heading" "What is Nordic Hack?" "description" "Nordic Hack is a hackathon for students hosted by other students. At Nordic Hack we focus on making an event where students can benefit from participating. Students will have opportunity to learn new skills, connect with corporate sponsors and have fun with other students who share their passion for building new and cool stuff." "svg1" "img/svg/brainstorm.svg" "text1" "Brainstorm" "svg2" "/img/svg/design.svg" "text2" "Design " "svg3" "/img/svg/Develop.svg" "text3" "Develop " "buttonText" "Register here" "buttonLink" "/register" ) }} 
 
-{{ partial "about" . }}
+<!-- {{ partial "about" . }} -->
 
 <!-- {{ partial "blog" . }} -->
-<!-- 
-{{ partial "timeline" . }} -->
-<!-- 
+
+{{ partial "timeline" . }}
+
 <div class="bg-off-white pv4">
         <div class="ph3 mw7 center">
-    
-            <h2 class="f2 b lh-title mb3">Sponsors</h1>
-                <article>
+            <h2 class="f2 primary b lh-title mb3">Sponsors</h1>
+                <article>   
                         <div class="cf ma3 pa2">
                             <div class="center">
                                 {{ partial "sponsor" (dict "heading" "UCN Technology and business" "imageURL" "/img/home/UCN-logo.png" "text" "Our sponsor UCN has been so generous as to host the event and let us use the biggest room on the Sofiendalsvej campus for our main event room." "buttonText" "See more" "buttonLink" "https://www.ucn.dk/" ) }} 
                             </div>
                         </div>
             </article>
-</div> -->
+</div>
+
+{{ partial "team" . }}
 
 
 {{ partial "footer" . }}
