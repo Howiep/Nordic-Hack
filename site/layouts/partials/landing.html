@@ -9,9 +9,10 @@
                 23 - 24. February
             </h1>
             {{ if .buttonText }}
-            <div class="">
                 <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
-            </div>
+            {{ end }}
+            {{ if .volunteerText }}
+                <a href="{{.volunteerLink}}" class="btn raise">{{.volunteerText}}</a>
             {{ end }}
         </div>
     </div>
