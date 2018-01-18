@@ -1,14 +1,5 @@
 // JS Goes here - ES6 supported
-function toggleMap() {
-    event.preventDefault();
-    x = document.getElementById("Maps");
-    console.log("test")
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  }
+
 
 
 var acc = document.getElementsByClassName("accordion");
