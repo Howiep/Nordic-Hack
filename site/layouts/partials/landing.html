@@ -1,18 +1,18 @@
 <div class="bg-primary mw9 center ph3-ns">
-    <div class="flex ph5-ns pt3">
-        <div class="fl w-33-ns pa2 mt6-ns mt5">
+    <div class="flex ph5-ns pt2 pb2">
+        <div class="fl w-50-ns mt6-ns mt5">
             <img src="{{.vector2}}" alt="">
         </div>
-        <div class="fl w-60 pa2 mt6-ns mt5">
+        <div class="fl w-50 pa2 mt6-ns mt5">
             <img src="{{.vector1}}" class="" alt="">
             <h1 class="white b f2-ns f3">
                 23 - 24. February
             </h1>
             {{ if .buttonText }}
-                <a href="{{.buttonLink}}" class="btn raise">{{.buttonText}}</a>
+                <a href="{{.buttonLink}}" target="_blank" class="btn raise">{{.buttonText}}</a>
             {{ end }}
             {{ if .volunteerText }}
-                <a href="{{.volunteerLink}}" class="btn raise">{{.volunteerText}}</a>
+                <a href="{{.volunteerLink}}" target="_blank" class="btn raise">{{.volunteerText}}</a>
             {{ end }}
         </div>
     </div>
