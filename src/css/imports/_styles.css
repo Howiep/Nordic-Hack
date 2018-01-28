@@ -17,7 +17,7 @@ nav{
   z-index: 999;
 }
 
-/* #mlh-trust-badge{
+#mlh-trust-badge{
   margin-top: 60px;
 }
 @media screen and (width >= 500px) and (width <= 800px) {
@@ -35,7 +35,6 @@ nav{
  }
  }
  @media screen and (width >= 100px) and (width <= 500px) {
-<<<<<<< HEAD
   #mlh-trust-badge{
     margin-top: 45px;
   }
@@ -57,11 +56,9 @@ nav{
   background-color: white;
   display: none;
 }
-=======
   
  #mlh-trust-badge{
    margin-top: 45px;
  
  }
- } */
->>>>>>> parent of 107a463dd... badge and some stuff
+ 
