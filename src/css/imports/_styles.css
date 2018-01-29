@@ -30,7 +30,7 @@ nav{
 @media screen and (width >= 800px) and (width <= 960px) {
   
  #mlh-trust-badge{
-   margin-top: 45px;
+   margin-top: 50px;
  
  }
  }
@@ -56,9 +56,4 @@ nav{
   background-color: white;
   display: none;
 }
-  
- #mlh-trust-badge{
-   margin-top: 45px;
- 
- }
- 
+
