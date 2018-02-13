@@ -57,3 +57,16 @@ nav{
   display: none;
 }
 
+.activity{
+  padding: 5px;
+}
+.activity article {
+padding: 10px;
+border-radius: 4px;
+background-color: #ececec;
+}
+
+.activity article:nth-child(even) {
+  background-color: #333333;
+  color: #ececec;
+}
