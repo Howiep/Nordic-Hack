@@ -70,3 +70,6 @@ background-color: #fffdfc;
   background-color: #333333;
   color: #fffdfc;
 }
+.faq-border{
+  border-radius: 4px;
+}
