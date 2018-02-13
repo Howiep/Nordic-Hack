@@ -61,9 +61,10 @@ nav{
   padding: 5px;
 }
 .activity article {
-padding: 10px;
-border-radius: 4px;
-background-color: #fffdfc;
+  min-height: 100px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #fffdfc;
 }
 
 .activity article:nth-child(even) {
