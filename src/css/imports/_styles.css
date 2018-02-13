@@ -63,10 +63,10 @@ nav{
 .activity article {
 padding: 10px;
 border-radius: 4px;
-background-color: #ececec;
+background-color: #fffdfc;
 }
 
 .activity article:nth-child(even) {
   background-color: #333333;
-  color: #ececec;
+  color: #fffdfc;
 }
