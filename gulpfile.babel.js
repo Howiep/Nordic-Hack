@@ -35,7 +35,7 @@ gulp.task("cms", () => {
     .pipe(browserSync.stream())
 });
 
-gulp.task("build", ["css", "js", "hugo", "cms"]);
+gulp.task("build", ["css", "js", "hugo"]);
 gulp.task("build-preview", ["css", "js", "hugo-preview"]);
 
 gulp.task("css", () => (
@@ -79,7 +79,7 @@ gulp.task("svg", () => {
     .pipe(gulp.dest("site/layouts/partials/"));
 });
 
-gulp.task("server", ["hugo", "css", "js", "svg", "cms"], () => {
+gulp.task("server", ["hugo", "css", "js", "svg"], () => {
   browserSync.init({
     server: {
       baseDir: "./dist"
